@@ -19,7 +19,7 @@ function draw() {
 
   //with if-else statement
   if (shapeHeight < horizon) {
-    background("pink"); // blue if above horizon
+    background("#ffc0cb"); // blue if above horizon
     
   } else {
     background("grey"); // grey if below horizon
@@ -36,14 +36,14 @@ function draw() {
 
 
   // draw line for horizon
-  stroke('darkolivegreen');
+  stroke('#556B2F');
   line(0,horizon,width,horizon);
 
   //grass
 
-  fill("darkolivegreen");
+  fill("#556B2F");
 
-  rect(0, horizon, width, height);
+  rect(0, horizon, width, height - horizon);
 
 }
 
